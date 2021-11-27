@@ -21,6 +21,7 @@
               <ul class="navbar-nav ml-auto">
                 <% if user_signed_in? %>
                 <li><%= link_to "Home", user_path(current_user.id), class: "fas fa-home text-light" %></li>
+                <li><%= link_to "Users",users_path,class: "fas fa-users text-light" %></li>
                 <li><%= link_to "Books", books_path, class: "fas fa-bookk-open text-light" %> </li>
                 <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "fas fa-sign-out-alt text-light" %></li>
                 <%else%>
